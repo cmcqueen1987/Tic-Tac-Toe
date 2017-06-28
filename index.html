@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chuck's Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body class="container-fluid">
+  <header>
+    <h1>Chuck's WORLD FAMOUS Tic Tac Toe</h1>
+  </header>
+  <nav style="padding: 10px;">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
+        Click Here To Play!
+    </button>
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Welcome to Chuck's WORLD FAMOUS Tic Tac Toe!</h4>
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <div class="checkbox">
+
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+
+  <div id="gameboard">
+    <div class="row">
+      <div class="col-xs-4 box game-cell">1</div>
+      <div class="col-xs-4 box game-cell">2</div>
+      <div class="col-xs-4 box game-cell">3</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 box game-cell">4</div>
+      <div class="col-xs-4 box game-cell">5</div>
+      <div class="col-xs-4 box game-cell">6</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 box game-cell">7</div>
+      <div class="col-xs-4 box game-cell">8</div>
+      <div class="col-xs-4 box game-cell">9</div>
+    </div>
+  </div>
+
+  <div class="button game-new">Start New Game</div>
+  <div class="button game-reset">Clear Board</div>
+
+</body>
+<script src="./index.js"></script>
+</html>
