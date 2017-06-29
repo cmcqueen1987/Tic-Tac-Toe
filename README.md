@@ -42,3 +42,15 @@
   <li>AJAX</li>
 
 <h3>Wireframes</h3>
+
+
+const winRow = function () {
+  if (
+    $('#0').text() === $('#1').text() && $('#1').text() === $('#2').text() && $('#0').text() !== '' ||
+    $('#3').text() === $('#4').text() && $('#4').text() === $('#5').text() && $('#3').text() !== '' ||
+    $('#6').text() === $('#7').text() && $('#7').text() === $('#8').text() && $('#6').text() !== '' ||
+  )}
+  return (winner)
+    } else {
+      return false;
+}

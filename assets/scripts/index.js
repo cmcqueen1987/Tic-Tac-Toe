@@ -8,87 +8,133 @@ let player1 = true
 $(() => {
   setAPIOrigin(location, config)
 
-$('#1').on('click', function () {
-if (player1 === true) {
-  $('#1').text('X')
-}else{
-  $('#1').text('O')
-}
-player1=!player1
+  $('#0').on('click', function() {
+    if (player1 === true) {
+      $('#0').text('X')
+    } else {
+      $('#0').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#1').on('click', function() {
+    if (player1 === true) {
+      $('#1').text('X')
+    } else {
+      $('#1').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#2').on('click', function() {
+    if (player1 === true) {
+      $('#2').text('X')
+    } else {
+      $('#2').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#3').on('click', function() {
+    if (player1 === true) {
+      $('#3').text('X')
+    } else {
+      $('#3').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#4').on('click', function() {
+    if (player1 === true) {
+      $('#4').text('X')
+    } else {
+      $('#4').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#5').on('click', function() {
+    if (player1 === true) {
+      $('#5').text('X')
+    } else {
+      $('#5').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#6').on('click', function() {
+    if (player1 === true) {
+      $('#6').text('X')
+    } else {
+      $('#6').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#7').on('click', function() {
+    if (player1 === true) {
+      $('#7').text('X')
+    } else {
+      $('#7').text('O')
+    }
+    player1 = !player1
+  })
+
+  $('#8').on('click', function() {
+    if (player1 === true) {
+      $('#8').text('X')
+    } else {
+      $('#8').text('O')
+    }
+    player1 = !player1
+  })
 })
 
-$('#2').on('click', function () {
-  if (player1 === true) {
-$('#2').text('X')
-}else{
-  $('#2').text('O')
+const winRow = function() {
+  if (($('#0').text() === $('#1').text() && $('#1').text() === $('#2').text() && $('#0').text() !== '') ||
+    ($('#3').text() === $('#4').text() && $('#4').text() === $('#5').text() && $('#3').text() !== '') ||
+    ($('#6').text() === $('#7').text() && $('#7').text() === $('#8').text() && $('#6').text() !== '')) {
+    return (true)
+  } else {
+    return false
+  }
 }
-player1=!player1
-})
 
-$('#3').on('click', function () {
-  if (player1 === true) {
-$('#3').text('X')
-}else{
-  $('#3').text('O')
+const winColumn = function() {
+  if (
+    $('#0').text() === $('#3').text() && $('#3').text() === $('#6').text() && $('#0').text() !== '' ||
+    $('#1').text() === $('#4').text() && $('#4').text() === $('#7').text() && $('#1').text() !== '' ||
+    $('#2').text() === $('#5').text() && $('#5').text() === $('#8').text() && $('#2').text() !== ''
+  ) {
+    return (true)
+  } else {
+    return false
+  }
 }
-player1=!player1
-})
+const winDiagonal = function() {
+  if (
+    $('#4').text() === $('#0').text() && $('#0').text() === $('#8').text() && $('#4').text() !== '' ||
+    $('#4').text() === $('#6').text() && $('#6').text() === $('#2').text() && $('#4').text() !== ''
+  ) {
+    return (true)
+  } else {
+    return false
+  }
+}
 
-$('#4').on('click', function () {
-  if (player1 === true) {
-$('#4').text('X')
-}else{
-  $('#4').text('O')
+const checkWinner = function () {
+  if (
+    winDiagonal() ||
+    winColumn() ||
+    winRow()
+  ) {
+    return (true)
+  } else {
+    return false
+  }
 }
-player1=!player1
-})
 
-$('#5').on('click', function () {
-  if (player1 === true) {
-$('#5').text('X')
-}else{
-  $('#5').text('O')
-}
-player1=!player1
-})
 
-$('#6').on('click', function () {
-  if (player1 === true) {
-$('#6').text('X')
-}else{
-  $('#6').text('O')
-}
-player1=!player1
-})
-
-$('#7').on('click', function () {
-  if (player1 === true) {
-$('#7').text('X')
-}else{
-  $('#7').text('O')
-}
-player1=!player1
-})
-
-$('#8').on('click', function () {
-  if (player1 === true) {
-$('#8').text('X')
-}else{
-  $('#8').text('O')
-}
-player1=!player1
-})
-
-$('#9').on('click', function () {
-  if (player1 === true) {
-$('#9').text('X')
-}else{
-  $('#9').text('O')
-}
-player1=!player1
-})
-})
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
