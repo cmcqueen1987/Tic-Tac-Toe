@@ -10,7 +10,7 @@ $(() => {
 
   $('#0').on('click', function () {
     $('#0').text()
-    if ($('#0').text() === 'X' || $('#0').text() === 'O'){
+    if ($('#0').text() === 'X' || $('#0').text() === 'O') {
       return false
     }
     if (player1 === true) {
@@ -23,6 +23,10 @@ $(() => {
   })
 
   $('#1').on('click', function () {
+    $('#1').text()
+    if ($('#1').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#1').text('X')
     } else {
@@ -33,6 +37,10 @@ $(() => {
   })
 
   $('#2').on('click', function () {
+    $('#2').text()
+    if ($('#2').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#2').text('X')
     } else {
@@ -43,6 +51,10 @@ $(() => {
   })
 
   $('#3').on('click', function () {
+    $('#3').text()
+    if ($('#3').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#3').text('X')
     } else {
@@ -53,6 +65,10 @@ $(() => {
   })
 
   $('#4').on('click', function () {
+    $('#4').text()
+    if ($('#4').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#4').text('X')
     } else {
@@ -63,6 +79,10 @@ $(() => {
   })
 
   $('#5').on('click', function () {
+    $('#5').text()
+    if ($('#5').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#5').text('X')
     } else {
@@ -73,6 +93,10 @@ $(() => {
   })
 
   $('#6').on('click', function () {
+    $('#6').text()
+    if ($('#6').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#6').text('X')
     } else {
@@ -83,6 +107,10 @@ $(() => {
   })
 
   $('#7').on('click', function () {
+    $('#7').text()
+    if ($('#7').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#7').text('X')
     } else {
@@ -93,6 +121,10 @@ $(() => {
   })
 
   $('#8').on('click', function () {
+    $('#8').text()
+    if ($('#8').text() === 'X' || $('#0').text() === 'O') {
+      return false
+    }
     if (player1 === true) {
       $('#8').text('X')
     } else {
@@ -134,15 +166,14 @@ const winDiagonal = function () {
   }
 }
 const checkWinner = function () {
-  console.log('we got here')
   if (winDiagonal() || winColumn() || winRow()) {
-$('.Winner').text('You Won!')
+    $('.Winner').text('Player X Wins!')
     return true
   } else {
+    $('.Winner').text('Player O Wins!')
     return false
   }
 }
-
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
