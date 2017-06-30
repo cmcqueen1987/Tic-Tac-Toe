@@ -170,7 +170,6 @@ const checkWinner = function () {
     $('.Winner').text('Player X Wins!')
     return true
   } else {
-    $('.Winner').text('Player O Wins!')
     return false
   }
 }
