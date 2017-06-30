@@ -5,6 +5,7 @@
 <h2>By Charlie McQueen (WDI 19)</h2>
 
 <h3>Link To Play!</h3>
+https://git.generalassemb.ly/cmcqueen1987
 
 <h3>Steps Taken to Complete the Game</h3>
     <li>Drew up a few different wireframes which you can see below to help me plan my layout.</li>
