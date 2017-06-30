@@ -14,6 +14,10 @@
     <li>Set up page first by creating a header, nav bar and board image.</li>
     <li>Created another set of buttons "Start New Game" and "Clear Board".</li>
     <li>Began creating game logic.</li>
+    <li>Commited the changes to my logic every few hours to make sure I many points stored.</li>
+    <li>Tested my board functions numerous times to make sure they were working before deploying it online</li>
+    <li>Deployed project online</li>
+    <li>still working to complete the game.....!</li>
 
 <h3>User Stories</h3>
     <li>-I want to clearly be able to locate a button to log-in or sign-up.</li>
