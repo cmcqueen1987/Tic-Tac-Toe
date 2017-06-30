@@ -42,6 +42,7 @@
   <li>AJAX</li>
 
 <h3>Unsolved Problems</h3>
-
-
-<h3>Wireframes</h3>
+<li> Display which side wins</li>
+<li> Clearboard function</li>
+<li> Support Multiple Games</li>
+<li> Use Ajax for intereacting with api</li>
